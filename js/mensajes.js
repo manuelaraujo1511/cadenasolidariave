@@ -43,7 +43,7 @@ Etiqueta a alguien que quiera ayudar 👇
 
 Registra qué tienes → coordinamos la entrega → llega al centro de acopio.
 
-🔗 cadenasolidariave.vercel.app
+🔗 https://cadenasolidariave.vercel.app/
 
 #VenezuelaNoEstáSola #TerremotoVenezuela`
   },

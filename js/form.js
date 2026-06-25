@@ -12,7 +12,7 @@
  * localmente (útil para pruebas offline).
  */
 
-const GAS_ENDPOINT = ""; // ← Pega aquí la URL de tu Apps Script Web App
+const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzuYgvCn7KfYhE6G0GbiRUpulg638TzKQ4Ng6nE6jV89o_TuQiHRhbYUX4KMY0M5WTe/exec"; // ← Pega aquí la URL de tu Apps Script Web App
 
 const form = document.getElementById("form-donacion");
 const successBanner = document.getElementById("success-banner");
