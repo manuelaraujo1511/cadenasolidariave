@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Coordinamos donaciones desde Bogotá para las víctimas del terremoto en Venezuela. Registra tu ayuda y la llevamos al centro de acopio." />
+  <meta property="og:title" content="CadenaSolidariaVE — Bogotá con Venezuela" />
+  <meta property="og:description" content="Registra tu donación y la coordinamos para que llegue a Venezuela." />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>CadenaSolidariaVE — Bogotá con Venezuela</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="logo">❤️ CadenaSolidariaVE</div>
+      <p class="hero-sub">Bogotá se organiza para Venezuela · Terremoto junio 2026</p>
+      <div class="hero-cta">
+        <a href="#donar" class="btn btn-primary">Quiero donar</a>
+        <a href="#acopios" class="btn btn-outline">Ver centros de acopio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-num" id="stat-donantes">–</span>
+        <span class="stat-label">donantes registrados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="stat-recolecciones">–</span>
+        <span class="stat-label">recolecciones pendientes</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="stat-acopios">4</span>
+        <span class="stat-label">centros de acopio activos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE DONACIÓN -->
+  <section id="donar" class="section">
+    <div class="container">
+      <h2>Registra tu donación</h2>
+      <p class="section-sub">Llena este formulario y te contactamos por WhatsApp para coordinar la entrega.</p>
+
+      <form id="form-donacion" class="card form-card" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="whatsapp">WhatsApp (con indicativo)</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="+57 300 000 0000" required />
+        </div>
+
+        <div class="field">
+          <label>¿Qué puedes donar? <span class="hint">(selecciona los que apliquen)</span></label>
+          <div class="chip-group" id="chips-donacion">
+            <button type="button" class="chip" data-val="alimentos">Alimentos no perecederos</button>
+            <button type="button" class="chip" data-val="agua">Agua / bebidas</button>
+            <button type="button" class="chip" data-val="medicamentos">Medicamentos</button>
+            <button type="button" class="chip" data-val="ropa">Ropa y calzado</button>
+            <button type="button" class="chip" data-val="aseo">Artículos de aseo</button>
+            <button type="button" class="chip" data-val="dinero">Dinero / transferencia</button>
+            <button type="button" class="chip" data-val="cobijas">Frazadas / cobijas</button>
+            <button type="button" class="chip" data-val="utiles">Útiles escolares</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="zona">Tu localidad en Bogotá</label>
+          <select id="zona" name="zona" required>
+            <option value="">Selecciona tu localidad…</option>
+            <option>Usaquén</option><option>Chapinero</option><option>Santa Fe</option>
+            <option>San Cristóbal</option><option>Usme</option><option>Tunjuelito</option>
+            <option>Bosa</option><option>Kennedy</option><option>Fontibón</option>
+            <option>Engativá</option><option>Suba</option><option>Barrios Unidos</option>
+            <option>Teusaquillo</option><option>Los Mártires</option><option>Antonio Nariño</option>
+            <option>Puente Aranda</option><option>La Candelaria</option>
+            <option>Rafael Uribe Uribe</option><option>Ciudad Bolívar</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>¿Cómo puedes colaborar con la entrega?</label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="entrega" value="llevo" checked />
+              <span>Puedo llevar al centro de acopio</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="entrega" value="recoger" />
+              <span>Necesito que pasen por mi casa</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="entrega" value="vehiculo" />
+              <span>Tengo vehículo y puedo ayudar a recoger</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="notas">Notas adicionales <span class="hint">(opcional)</span></label>
+          <textarea id="notas" name="notas" placeholder="Ej: tengo 5 cajas de arroz, disponible sábados…" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Registrar mi donación</button>
+        <p class="form-note">Al enviar aceptas que te contactemos por WhatsApp para coordinar la entrega.</p>
+      </form>
+
+      <div id="success-banner" class="success-banner hidden">
+        <strong>¡Gracias por tu donación!</strong>
+        <p>Te contactaremos pronto por WhatsApp para coordinar.</p>
+        <p class="share-prompt">Ayúdanos a difundir 👇</p>
+        <div class="share-row">
+          <a href="#" class="share-wa" id="share-wa-link" target="_blank" rel="noopener">Compartir en WhatsApp</a>
+          <a href="#" class="share-x" id="share-x-link" target="_blank" rel="noopener">Compartir en X</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENTROS DE ACOPIO -->
+  <section id="acopios" class="section section-alt">
+    <div class="container">
+      <h2>Centros de acopio en Bogotá</h2>
+      <p class="section-sub">Abiertos hoy. Lleva directamente o regístrate arriba y coordinamos el transporte.</p>
+      <div class="acopios-grid" id="acopios-list">
+        <!-- Renderizado desde js/acopios.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="section">
+    <div class="container">
+      <h2>¿Cómo funciona?</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <strong>Registras tu donación</strong>
+            <p>Nos dices qué tienes, desde qué zona y cómo puedes entregar.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <strong>Te contactamos por WhatsApp</strong>
+            <p>Coordinamos hora y lugar de entrega o recolección en tu casa.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <strong>La ayuda llega al centro de acopio</strong>
+            <p>Todo se centraliza y se envía con los cargamentos hacia Venezuela.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFUNDIR -->
+  <section id="difundir" class="section section-alt">
+    <div class="container">
+      <h2>Ayúdanos a difundir</h2>
+      <p class="section-sub">Copia estos mensajes y compártelos en tus redes o grupos de WhatsApp.</p>
+      <div class="mensajes-grid" id="mensajes-list">
+        <!-- Renderizado desde js/mensajes.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>CadenaSolidariaVE · Iniciativa ciudadana desde Bogotá · 2026</p>
+      <p>¿Quieres sumarte al equipo organizador? Escríbenos a <a href="https://wa.me/57XXXXXXXXXX" target="_blank">WhatsApp</a></p>
+    </div>
+  </footer>
+
+  <script src="/js/acopios.js"></script>
+  <script src="/js/mensajes.js"></script>
+  <script src="/js/form.js"></script>
+</body>
+</html>
