@@ -11,12 +11,12 @@
 
 const ACOPIOS = [
   {
-    nombre: "Cruz Roja Colombiana — Sede Nacional",
-    direccion: "Av. 68 #66-31, Bogotá",
-    horario: "Lun – Sáb · 8:00 am – 6:00 pm",
-    acepta: ["Alimentos", "Medicamentos", "Aseo", "Ropa"],
-    gmaps: "https://maps.google.com/?q=Cruz+Roja+Colombiana+Bogota"
-  },
+  nombre: "Bogotá Pádel Center",
+  direccion: "Cra 45 #169-81, Bogotá (norte, cerca Calle 170)",
+  horario: "Todos los días · 10:00 am – 6:00 pm",
+  acepta: ["Alimentos", "Ropa", "Aseo", "Medicamentos"],
+  gmaps: "https://maps.google.com/?q=Cra+45+%23169-81+Bogota"
+},
   {
     nombre: "Ministerio de Relaciones Exteriores",
     direccion: "Calle 10 #5-51, La Candelaria",
