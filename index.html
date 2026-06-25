@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Coordinamos donaciones desde Bogotá para las víctimas del terremoto en Venezuela. Registra tu ayuda y la llevamos al centro de acopio." />
-  <meta property="og:title" content="CadenaSolidariaVE — Bogotá con Venezuela" />
-  <meta property="og:description" content="Registra tu donación y la coordinamos para que llegue a Venezuela." />
+  <meta name="description" content="Coordina tu donación para las víctimas del terremoto en Venezuela. Centros de acopio en Bogotá, Medellín y Cali. Envíos seguros y coordinados." />
+  <meta property="og:title" content="CadenaSolidariaVE — Ayuda Coordinada para Venezuela" />
+  <meta property="og:description" content="Registra tu donación y coordinamos el transporte a Venezuela de forma segura." />
   <meta property="og:image" content="/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <title>CadenaSolidariaVE — Bogotá con Venezuela</title>
+  <title>CadenaSolidariaVE — Ayuda Coordinada para Venezuela</title>
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="apple-touch-icon" href="/assets/favicon.ico" />
@@ -17,39 +17,75 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="container">
-      <div class="logo">❤️ CadenaSolidariaVE</div>
-      <p class="hero-sub">Bogotá se organiza para Venezuela · Terremoto junio 2026</p>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">🚨 Emergencia Venezuela · Junio 2026</div>
+      <h1 class="hero-title">Colombianos Unidos por Venezuela</h1>
+      <p class="hero-subtitle">Donaciones coordinadas desde Bogotá, Medellín y Cali. Llega donde más importa.</p>
       <div class="hero-cta">
-        <a href="#donar" class="btn btn-primary">Quiero donar</a>
-        <a href="#acopios" class="btn btn-outline">Ver centros de acopio</a>
+        <a href="#donar" class="btn btn-primary btn-lg">Quiero ayudar ahora</a>
+        <a href="#acopios" class="btn btn-secondary btn-lg">Ver dónde entregar</a>
       </div>
     </div>
   </header>
 
-  <!-- STATS BAR -->
-  <section class="stats-bar">
-    <div class="container stats-grid">
-      <div class="stat">
-        <span class="stat-num" id="stat-donantes">–</span>
-        <span class="stat-label">donantes registrados</span>
+  <!-- IMPACTO EN VIVO -->
+  <section class="impact-bar">
+    <div class="container impact-grid">
+      <div class="impact-stat">
+        <div class="impact-icon">👥</div>
+        <div class="impact-content">
+          <span class="impact-num" id="stat-donantes">–</span>
+          <span class="impact-label">personas ayudando</span>
+        </div>
       </div>
-      <div class="stat">
-        <span class="stat-num" id="stat-recolecciones">–</span>
-        <span class="stat-label">recolecciones pendientes</span>
+      <div class="impact-stat">
+        <div class="impact-icon">📦</div>
+        <div class="impact-content">
+          <span class="impact-num" id="stat-recolecciones">–</span>
+          <span class="impact-label">recolecciones coordinadas</span>
+        </div>
       </div>
-      <div class="stat">
-        <span class="stat-num" id="stat-acopios">4</span>
-        <span class="stat-label">centros de acopio activos</span>
+      <div class="impact-stat">
+        <div class="impact-icon">📍</div>
+        <div class="impact-content">
+          <span class="impact-num" id="stat-acopios">6</span>
+          <span class="impact-label">centros activos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEXTO DE LA EMERGENCIA -->
+  <section class="section section-context">
+    <div class="container">
+      <div class="context-box">
+        <h2>¿Qué pasó?</h2>
+        <p class="context-text">El 24 de junio de 2026, un terremoto de magnitud 7.5 afectó severamente a Venezuela, dejando miles de personas sin vivienda, acceso a alimentos ni medicinas.</p>
+        <p class="context-text"><strong>Desde Bogotá organizamos centros de acopio para coordinar la ayuda de forma segura y eficiente.</strong> Tú puedes ser parte de esta cadena solidaria.</p>
       </div>
     </div>
   </section>
 
   <!-- FORMULARIO DE DONACIÓN -->
-  <section id="donar" class="section">
+  <section id="donar" class="section section-alt">
     <div class="container">
-      <h2>Registra tu donación</h2>
-      <p class="section-sub">Llena este formulario y te contactamos por WhatsApp para coordinar la entrega.</p>
+      <h2>Registra tu Donación</h2>
+      <p class="section-sub">Cuéntanos qué tienes y cómo prefieres entregar. Coordinamos todo por WhatsApp.</p>
+      <div class="form-info">
+        <div class="info-item">
+          <span class="info-icon">✓</span>
+          <span>Proceso simple y transparente</span>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">✓</span>
+          <span>Coordinación directa por WhatsApp</span>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">✓</span>
+          <span>Entrega segura a centros verificados</span>
+        </div>
+      </div>
 
       <form id="form-donacion" class="card form-card" novalidate>
         <div class="field">
@@ -133,40 +169,73 @@
   </section>
 
   <!-- CENTROS DE ACOPIO -->
-  <section id="acopios" class="section section-alt">
+  <section id="acopios" class="section">
     <div class="container">
-      <h2>Centros de acopio en Bogotá</h2>
-      <p class="section-sub">Abiertos hoy. Lleva directamente o regístrate arriba y coordinamos el transporte.</p>
+      <h2>Dónde Entregas tu Ayuda</h2>
+      <p class="section-sub">Tenemos centros en Bogotá, Medellín y Cali. Todos verificados.</p>
+
+      <div class="acopios-instructions">
+        <div class="instruction-card">
+          <div class="instruction-num">1</div>
+          <div>
+            <strong>Elige tu ciudad</strong>
+            <p>Selecciona el centro más cercano a ti</p>
+          </div>
+        </div>
+        <div class="instruction-card">
+          <div class="instruction-num">2</div>
+          <div>
+            <strong>Contacta directamente</strong>
+            <p>Llama o escribe para confirmar horarios</p>
+          </div>
+        </div>
+        <div class="instruction-card">
+          <div class="instruction-num">3</div>
+          <div>
+            <strong>Entrega tu donación</strong>
+            <p>Llevas tus artículos al centro coordinado</p>
+          </div>
+        </div>
+      </div>
+
       <div class="acopios-grid" id="acopios-list">
         <!-- Renderizado desde js/acopios.js -->
       </div>
     </div>
   </section>
 
-  <!-- CÓMO FUNCIONA -->
-  <section class="section">
+  <!-- FLUJO DE DONACIÓN -->
+  <section class="section section-alt">
     <div class="container">
-      <h2>¿Cómo funciona?</h2>
+      <h2>Cómo tu donación llega a Venezuela</h2>
+      <p class="section-sub">4 pasos simples para hacer una diferencia real</p>
       <div class="steps">
         <div class="step">
-          <div class="step-num">1</div>
+          <div class="step-icon">📋</div>
           <div>
-            <strong>Registras tu donación</strong>
-            <p>Nos dices qué tienes, desde qué zona y cómo puedes entregar.</p>
+            <strong>Registra qué tienes</strong>
+            <p>Completa el formulario con tu donación y cómo prefieres entregarla. Toma menos de 2 minutos.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-num">2</div>
+          <div class="step-icon">💬</div>
           <div>
-            <strong>Te contactamos por WhatsApp</strong>
-            <p>Coordinamos hora y lugar de entrega o recolección en tu casa.</p>
+            <strong>Nos contactamos</strong>
+            <p>Te escribimos por WhatsApp para confirmar detalles y coordinar la mejor opción para ti.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-num">3</div>
+          <div class="step-icon">📦</div>
           <div>
-            <strong>La ayuda llega al centro de acopio</strong>
-            <p>Todo se centraliza y se envía con los cargamentos hacia Venezuela.</p>
+            <strong>Entrega coordinada</strong>
+            <p>Entregas en el centro de acopio o coordinamos recolección en tu domicilio.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">🚚</div>
+          <div>
+            <strong>Llega a Venezuela</strong>
+            <p>Tu ayuda se embala y envía de forma segura con <strong>@wedenvios</strong> hacia las víctimas.</p>
           </div>
         </div>
       </div>
@@ -174,10 +243,10 @@
   </section>
 
   <!-- DIFUNDIR -->
-  <section id="difundir" class="section section-alt">
+  <section id="difundir" class="section">
     <div class="container">
-      <h2>Ayúdanos a difundir</h2>
-      <p class="section-sub">Copia estos mensajes y compártelos en tus redes o grupos de WhatsApp.</p>
+      <h2>Amplifica el Mensaje</h2>
+      <p class="section-sub">Comparte en tus redes y grupos. Cuantas más personas se enteren, más ayuda llegará a Venezuela.</p>
       <div class="mensajes-grid" id="mensajes-list">
         <!-- Renderizado desde js/mensajes.js -->
       </div>
@@ -187,8 +256,29 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>CadenaSolidariaVE · Iniciativa ciudadana desde Bogotá · 2026</p>
-      <p>¿Quieres sumarte al equipo organizador? Escríbenos a <a href="https://wa.me/573203719148" target="_blank">WhatsApp</a></p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>CadenaSolidariaVE</h4>
+          <p>Coordinamos donaciones desde Bogotá, Medellín y Cali hacia Venezuela.</p>
+          <p class="footer-meta">Iniciativa ciudadana · Junio 2026</p>
+        </div>
+        <div class="footer-section">
+          <h4>Rápido</h4>
+          <ul>
+            <li><a href="#donar">Registrar donación</a></li>
+            <li><a href="#acopios">Centros de acopio</a></li>
+            <li><a href="#difundir">Compartir</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p><a href="https://wa.me/573203719148" target="_blank" rel="noopener">💬 WhatsApp Organizador</a></p>
+          <p><a href="mailto:cadenasolidariave@gmail.com">📧 Email</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Hecho con ❤️ para Venezuela · <a href="#" target="_blank">Privacidad</a> · <a href="#" target="_blank">Términos</a></p>
+      </div>
     </div>
   </footer>
 
