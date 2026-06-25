@@ -17,6 +17,33 @@ const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzuYgvCn7KfYhE6G0G
 const form = document.getElementById("form-donacion");
 const successBanner = document.getElementById("success-banner");
 const chipButtons = document.querySelectorAll("#chips-donacion .chip");
+const ciudadSelect = document.getElementById("ciudad");
+const zonaSelect = document.getElementById("zona");
+
+// Filtrado de localidades por ciudad
+ciudadSelect.addEventListener("change", () => {
+  const ciudadKey = ciudadSelect.value;
+  const ciudad = CIUDADES[ciudadKey];
+
+  // Limpiar opciones previas
+  zonaSelect.innerHTML = '<option value="">Selecciona tu localidad…</option>';
+
+  if (ciudad) {
+    // Llenar con localidades de la ciudad seleccionada
+    ciudad.localidades.forEach(loc => {
+      const opt = document.createElement("option");
+      opt.value = loc;
+      opt.textContent = loc;
+      zonaSelect.appendChild(opt);
+    });
+    zonaSelect.disabled = false;
+  } else {
+    zonaSelect.disabled = true;
+  }
+
+  // Limpiar error de validación
+  zonaSelect.classList.remove("error");
+});
 
 // Toggle chips
 chipButtons.forEach(btn => {
@@ -27,7 +54,7 @@ chipButtons.forEach(btn => {
 function validate() {
   let ok = true;
 
-  const campos = ["nombre", "whatsapp", "zona"];
+  const campos = ["nombre", "whatsapp", "ciudad", "zona"];
   campos.forEach(id => {
     const el = document.getElementById(id);
     if (!el.value.trim()) {
@@ -55,9 +82,13 @@ function getFormData() {
     .map(b => b.dataset.val)
     .join(", ");
 
+  const ciudadKey = ciudadSelect.value;
+  const ciudadNombre = ciudadKey ? CIUDADES[ciudadKey].nombre : "";
+
   return {
     nombre: document.getElementById("nombre").value.trim(),
     whatsapp: document.getElementById("whatsapp").value.trim(),
+    ciudad: ciudadNombre,
     zona: document.getElementById("zona").value,
     donaciones,
     entrega,

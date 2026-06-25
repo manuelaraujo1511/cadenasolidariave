@@ -55,11 +55,12 @@ El deploy se hace manualmente con la CLI.
 
 ## Pendientes
 
-- [ ] Agregar direcciones reales en `js/acopios.js`
-- [ ] Actualizar número de WhatsApp real en `index.html` footer (`57XXXXXXXXXX`)
+- [x] Agregar direcciones reales en `js/acopios.js`
+- [x] Actualizar número de WhatsApp real en `index.html` footer
+- [x] Google Apps Script backend conectado
+- [x] doPost.js integrado
 - [ ] Crear imagen OG (`assets/og-image.png`, 1200×630px)
 - [ ] Crear cuenta Instagram `@cadenasolidariave`
-- [ ] Crear número WhatsApp Business dedicado
 
 ## Cómo agregar un centro de acopio
 

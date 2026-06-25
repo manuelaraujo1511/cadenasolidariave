@@ -76,16 +76,19 @@
         </div>
 
         <div class="field">
-          <label for="zona">Tu localidad en Bogotá</label>
-          <select id="zona" name="zona" required>
+          <label for="ciudad">¿De qué ciudad vienes?</label>
+          <select id="ciudad" name="ciudad" required>
+            <option value="">Selecciona tu ciudad…</option>
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="zona">Tu localidad</label>
+          <select id="zona" name="zona" required disabled>
             <option value="">Selecciona tu localidad…</option>
-            <option>Usaquén</option><option>Chapinero</option><option>Santa Fe</option>
-            <option>San Cristóbal</option><option>Usme</option><option>Tunjuelito</option>
-            <option>Bosa</option><option>Kennedy</option><option>Fontibón</option>
-            <option>Engativá</option><option>Suba</option><option>Barrios Unidos</option>
-            <option>Teusaquillo</option><option>Los Mártires</option><option>Antonio Nariño</option>
-            <option>Puente Aranda</option><option>La Candelaria</option>
-            <option>Rafael Uribe Uribe</option><option>Ciudad Bolívar</option>
           </select>
         </div>
 
@@ -188,6 +191,7 @@
     </div>
   </footer>
 
+  <script src="/js/ciudades.js"></script>
   <script src="/js/acopios.js"></script>
   <script src="/js/mensajes.js"></script>
   <script src="/js/form.js"></script>

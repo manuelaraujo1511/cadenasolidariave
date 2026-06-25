@@ -266,6 +266,8 @@ textarea { resize: vertical; min-height: 80px; }
 .hidden { display: none !important; }
 
 /* ---- ACOPIOS ---- */
+.acopios-ciudad { margin-bottom: 2rem; }
+.acopios-ciudad h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--gray-900); }
 .acopios-grid { display: flex; flex-direction: column; gap: 0.75rem; }
 .acopio-card {
   background: var(--white);
@@ -285,6 +287,9 @@ textarea { resize: vertical; min-height: 80px; }
 }
 .acopio-name { font-weight: 600; font-size: 0.95rem; }
 .acopio-dir { font-size: 0.85rem; color: var(--gray-400); }
+.acopio-phone { font-size: 0.85rem; color: var(--gray-400); }
+.acopio-phone a { color: var(--blue); text-decoration: none; }
+.acopio-phone a:hover { text-decoration: underline; }
 .acopio-horario { font-size: 0.82rem; color: var(--gray-400); }
 .acopio-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.3rem; }
 .tag {
