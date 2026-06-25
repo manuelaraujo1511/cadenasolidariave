@@ -18,26 +18,12 @@ const ACOPIOS = [
   gmaps: "https://maps.google.com/?q=Cra+45+%23169-81+Bogota"
 },
   {
-    nombre: "Ministerio de Relaciones Exteriores",
-    direccion: "Calle 10 #5-51, La Candelaria",
-    horario: "Lun – Vie · 8:00 am – 4:00 pm",
-    acepta: ["Alimentos", "Aseo", "Ropa"],
-    gmaps: "https://maps.google.com/?q=Ministerio+Relaciones+Exteriores+Bogota"
-  },
-  {
-    nombre: "Migración Colombia — Sede Norte",
-    direccion: "Cra 28A #47A-40, Palermo",
-    horario: "Lun – Vie · 7:00 am – 5:00 pm",
-    acepta: ["Alimentos", "Medicamentos", "Aseo"],
-    gmaps: "https://maps.google.com/?q=Migracion+Colombia+Bogota+Norte"
-  },
-  {
-    nombre: "Parroquia Cristo Rey (Kennedy)",
-    direccion: "Cra 78 #38-07, Kennedy",
-    horario: "Todos los días · 9:00 am – 7:00 pm",
-    acepta: ["Alimentos", "Ropa", "Cobijas"],
-    gmaps: "https://maps.google.com/?q=Parroquia+Cristo+Rey+Kennedy+Bogota"
-  }
+  nombre: "Fundación Juntos se Puede",
+  direccion: "Calle 104 #54-31, Bogotá",
+  horario: "Todos los días · 7:00 am – 6:00 pm",
+  acepta: ["Alimentos", "Ropa", "Aseo", "Medicamentos"],
+  gmaps: "https://maps.google.com/?q=Calle+104+%2354-31+Bogota"
+},
   // → Agrega más centros aquí con el mismo formato
 ];
 
