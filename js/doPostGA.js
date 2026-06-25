@@ -131,3 +131,36 @@ function testRepartidor() {
     notas: "Disponible sábados y domingos, tengo camioneta"
   })}});
 }
+
+function doGet(e) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  
+  const hojaDonantes = ss.getSheetByName("Donantes");
+  const hojaRepartidores = ss.getSheetByName("Repartidores");
+  
+  const totalDonantes = hojaDonantes 
+    ? Math.max(0, hojaDonantes.getLastRow() - 1) 
+    : 0;
+    
+  const recolecciones = hojaDonantes 
+    ? hojaDonantes.getRange(2, 7, Math.max(1, hojaDonantes.getLastRow() - 1), 1)
+        .getValues()
+        .filter(r => r[0].toString().includes("Necesita recolección"))
+        .length 
+    : 0;
+    
+  const totalRepartidores = hojaRepartidores 
+    ? Math.max(0, hojaRepartidores.getLastRow() - 1) 
+    : 0;
+
+  const data = {
+    donantes: totalDonantes,
+    recolecciones: recolecciones,
+    repartidores: totalRepartidores,
+    acopios: 2
+  };
+
+  return ContentService
+    .createTextOutput(JSON.stringify(data))
+    .setMimeType(ContentService.MimeType.JSON);
+}

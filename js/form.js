@@ -85,9 +85,14 @@ function getFormData() {
   const ciudadKey = ciudadSelect.value;
   const ciudadNombre = ciudadKey ? CIUDADES[ciudadKey].nombre : "";
 
+  let whatsapp = document.getElementById("whatsapp").value.trim();
+  if (whatsapp.startsWith("+57")) {
+    whatsapp = whatsapp.substring(3);
+  }
+
   return {
     nombre: document.getElementById("nombre").value.trim(),
-    whatsapp: document.getElementById("whatsapp").value.trim(),
+    whatsapp,
     ciudad: ciudadNombre,
     zona: document.getElementById("zona").value,
     donaciones,
@@ -155,3 +160,20 @@ form.addEventListener("submit", async (e) => {
 // Inicializar stats con guión hasta que carguen datos reales
 document.getElementById("stat-donantes").textContent = "0";
 document.getElementById("stat-recolecciones").textContent = "0";
+
+async function actualizarContadores() {
+  try {
+    const res = await fetch(GAS_ENDPOINT);
+    const data = await res.json();
+    
+    document.getElementById("stat-donantes").textContent = data.donantes;
+    document.getElementById("stat-recolecciones").textContent = data.recolecciones;
+    document.getElementById("stat-acopios").textContent = data.acopios;
+  } catch (err) {
+    console.error("Error actualizando contadores:", err);
+  }
+}
+
+// Corre al cargar la página y cada 60 segundos
+actualizarContadores();
+setInterval(actualizarContadores, 60000);
