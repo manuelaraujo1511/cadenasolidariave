@@ -9,6 +9,7 @@
  *   telefono   (string, requerido)
  *   horario    (string, requerido)
  *   acepta     (array de strings — tags visibles)
+ *   disponible (boolean, default: true — si false, no se muestra)
  *   gmaps      (string — URL de Google Maps, opcional)
  */
 
@@ -21,6 +22,7 @@ const ACOPIOS = [
     telefono: "+57 317 765 2294",
     horario: "Consultar disponibilidad",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
     gmaps: "https://maps.google.com/?q=Calle+142+%2317A-40+Bogota"
   },
   {
@@ -30,6 +32,7 @@ const ACOPIOS = [
     telefono: "+57 320 438 3449",
     horario: "Consultar disponibilidad",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
     gmaps: "https://maps.google.com/?q=Av.+1+de+Mayo+%238-22+Bogota"
   },
   {
@@ -77,9 +80,9 @@ function renderAcopios() {
   const container = document.getElementById("acopios-list");
   if (!container) return;
 
-  // Agrupar por ciudad
+  // Filtrar solo disponibles y agrupar por ciudad
   const porCiudad = {};
-  ACOPIOS.forEach(a => {
+  ACOPIOS.filter(a => a.disponible !== false).forEach(a => {
     if (!porCiudad[a.ciudad]) porCiudad[a.ciudad] = [];
     porCiudad[a.ciudad].push(a);
   });
@@ -110,7 +113,10 @@ function renderAcopios() {
   container.innerHTML = html;
 
   const stat = document.getElementById("stat-acopios");
-  if (stat) stat.textContent = ACOPIOS.length;
+  if (stat) {
+    const disponibles = ACOPIOS.filter(a => a.disponible !== false).length;
+    stat.textContent = disponibles;
+  }
 }
 
 renderAcopios();
