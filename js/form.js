@@ -157,22 +157,46 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// Inicializar stats con guión hasta que carguen datos reales
-document.getElementById("stat-donantes").textContent = "0";
-document.getElementById("stat-recolecciones").textContent = "0";
+// Spinner mientras carga
+const spinner = "⏳";
+const statDonantes = document.getElementById("stat-donantes");
+const statRecolecciones = document.getElementById("stat-recolecciones");
+const statAcopios = document.getElementById("stat-acopios");
+
+// Inicializar stats con spinner
+statDonantes.textContent = spinner;
+statRecolecciones.textContent = spinner;
+statAcopios.textContent = spinner;
+
+// Agregar clase de loading para animación
+statDonantes.classList.add("loading");
+statRecolecciones.classList.add("loading");
+statAcopios.classList.add("loading");
 
 async function actualizarContadores() {
   try {
     const res = await fetch(GAS_ENDPOINT);
     const data = await res.json();
-    
-    document.getElementById("stat-donantes").textContent = data.donantes;
-    document.getElementById("stat-recolecciones").textContent = data.recolecciones;
+
+    // Remover spinner
+    statDonantes.classList.remove("loading");
+    statRecolecciones.classList.remove("loading");
+
+    statDonantes.textContent = data.donantes || "0";
+    statRecolecciones.textContent = data.recolecciones || "0";
   } catch (err) {
     console.error("Error actualizando contadores:", err);
+    // En caso de error, mostrar 0
+    statDonantes.classList.remove("loading");
+    statRecolecciones.classList.remove("loading");
+    statDonantes.textContent = "0";
+    statRecolecciones.textContent = "0";
   }
 }
 
-// Corre al cargar la página y cada 60 segundos
-actualizarContadores();
-setInterval(actualizarContadores, 60000);
+// Espera a que cargue la página, luego actualiza contadores
+(async () => {
+  await actualizarContadores();
+  // Luego actualiza cada 60 segundos
+  setInterval(actualizarContadores, 60000);
+})();
