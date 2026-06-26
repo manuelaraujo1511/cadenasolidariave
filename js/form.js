@@ -54,7 +54,7 @@ chipButtons.forEach(btn => {
 function validate() {
   let ok = true;
 
-  const campos = ["nombre", "whatsapp", "ciudad", "zona"];
+  const campos = ["nombre", "whatsapp", "ciudad", "zona", "notas"];
   campos.forEach(id => {
     const el = document.getElementById(id);
     if (!el.value.trim()) {
