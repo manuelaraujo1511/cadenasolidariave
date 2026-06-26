@@ -142,7 +142,7 @@ form.addEventListener("submit", async (e) => {
 
     // Links de share dinámicos
     const msg = encodeURIComponent(
-      `Acabo de registrar mi donación en CadenaSolidariaVE para ayudar a Venezuela 🇻🇪❤️\n\nSi quieres ayudar: cadenasolidariave.vercel.app`
+      `Acabo de registrar mi donación en CadenaSolidariaVE para ayudar a Venezuela. \n\nSi quieres ayudar: cadenasolidariave.vercel.app`
     );
     document.getElementById("share-wa-link").href =
       `https://api.whatsapp.com/send?text=${msg}`;
@@ -168,7 +168,6 @@ async function actualizarContadores() {
     
     document.getElementById("stat-donantes").textContent = data.donantes;
     document.getElementById("stat-recolecciones").textContent = data.recolecciones;
-    document.getElementById("stat-acopios").textContent = data.acopios;
   } catch (err) {
     console.error("Error actualizando contadores:", err);
   }
