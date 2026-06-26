@@ -93,6 +93,116 @@ const ACOPIOS = [
     disponible: true,
     gmaps: "https://maps.google.com/?q=Calle+12B+%239-40+Bogota"
   },
+  {
+    nombre: "Chapinero — Hotel Matisse",
+    ciudad: "Bogotá",
+    direccion: "Calle 57 #5-55",
+    telefono: "+57 305 867 9421",
+    horario: "8:00 AM – 8:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+57+%235-55+Chapinero+Bogota"
+  },
+  {
+    nombre: "Chapinero — Centro Parque 63",
+    ciudad: "Bogotá",
+    direccion: "Carrera 13 #63-2",
+    telefono: "+57 322 841 7046",
+    horario: "8:00 AM – 7:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+13+%2363-2+Bogota"
+  },
+  {
+    nombre: "Chapinero — Carrera 9",
+    ciudad: "Bogotá",
+    direccion: "Carrera 9 #57-70",
+    telefono: "Por confirmar",
+    horario: "9:00 AM – 7:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+9+%2357-70+Chapinero+Bogota"
+  },
+  {
+    nombre: "Kennedy — Conjunto Oasis de Castilla",
+    ciudad: "Bogotá",
+    direccion: "Calle 19 #40-41",
+    telefono: "+57 313 440 7049",
+    horario: "8:00 AM – 8:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+19+%2340-41+Kennedy+Bogota"
+  },
+  {
+    nombre: "Barrios Unidos",
+    ciudad: "Bogotá",
+    direccion: "Carrera 65 #73-23",
+    telefono: "Por confirmar",
+    horario: "8:00 AM – 5:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+65+%2373-23+Barrios+Unidos+Bogota"
+  },
+  {
+    nombre: "Cedritos — Panadería Ávila",
+    ciudad: "Bogotá",
+    direccion: "Carrera 17 #141-05",
+    telefono: "Por confirmar",
+    horario: "8:00 AM – 5:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+17+%23141-05+Cedritos+Bogota"
+  },
+  {
+    nombre: "Centro Comercial Multiplaza",
+    ciudad: "Bogotá",
+    direccion: "Calle 19A #72-57",
+    telefono: "Por confirmar",
+    horario: "8:00 AM – 9:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+19A+%2372-57+Bogota"
+  },
+  {
+    nombre: "CC Granada Hills",
+    ciudad: "Bogotá",
+    direccion: "Autopista Norte #146-57",
+    telefono: "+57 300 555 9550",
+    horario: "7:00 AM – 7:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Autopista+Norte+%23146-57+Bogota"
+  },
+  {
+    nombre: "Usaquén",
+    ciudad: "Bogotá",
+    direccion: "Carrera 8 #127-76 Local 1",
+    telefono: "Por confirmar",
+    horario: "9:00 AM – 6:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+8+%23127-76+Usaquen+Bogota"
+  },
+  {
+    nombre: "Fontibón — Fundación Mahuampi",
+    ciudad: "Bogotá",
+    direccion: "Carrera 1166 #186-70",
+    telefono: "+57 322 768 3589",
+    horario: "Sábados y Domingos 3:00 PM – 8:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+1166+%23186-70+Fontibo+Bogota"
+  },
+  {
+    nombre: "Candelaria",
+    ciudad: "Bogotá",
+    direccion: "Carrera 5 #17-69",
+    telefono: "+57 301 482 7680",
+    horario: "8:00 AM – 10:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+5+%2317-69+Candelaria+Bogota"
+  },
   // MEDELLÍN
   {
     nombre: "Poblado",
