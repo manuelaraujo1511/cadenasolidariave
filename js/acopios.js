@@ -14,64 +14,68 @@
  */
 
 const ACOPIOS = [
-  // BOGOTÁ
+  // BARRANQUILLA
   {
-    nombre: "Wed Envios Venezuela (Cedritos)",
-    ciudad: "Bogotá",
-    direccion: "Calle 142 #17A-40 Local 1",
-    telefono: "+57 317 765 2294",
-    horario: "Consultar disponibilidad",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+142+%2317A-40+Bogota"
-  },
-  {
-    nombre: "20 de Julio",
-    ciudad: "Bogotá",
-    direccion: "Av. 1 de Mayo #8-22",
-    telefono: "+57 320 438 3449",
-    horario: "Consultar disponibilidad",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Av.+1+de+Mayo+%238-22+Bogota"
-  },
-  {
-    nombre: "Fundación Juntos se puede",
-    ciudad: "Bogotá",
-    direccion: "Calle 104 #54-31",
-    telefono: "Por confirmar",
-    horario: "9:00 AM – 6:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+104+%2354-31+Bogota"
-  },
-  {
-    nombre: "Kennedy",
-    ciudad: "Bogotá",
-    direccion: "Av. Cra. 86 #44 Sur-10 Local 29",
-    telefono: "+57 350 833 4029",
-    horario: "Consultar disponibilidad",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    gmaps: "https://maps.google.com/?q=Av.+Cra.+86+%2344+Sur-10+Bogota"
-  },
-  {
-    nombre: "Suba",
-    ciudad: "Bogotá",
-    direccion: "Centro Comercial Centro Suba, Av. Calle 145 #91-19 Local 12-101",
-    telefono: "+57 318 534 2222",
-    horario: "Consultar disponibilidad",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    gmaps: "https://maps.google.com/?q=Centro+Comercial+Centro+Suba+Bogota"
-  },
-  {
-    nombre: "Engativá — Calidex",
-    ciudad: "Bogotá",
-    direccion: "Calle 72 #82-60, Local 13 (Piso 1). Centro Empresarial Punto 72",
+    nombre: "Ciudad Jardín — Calidex",
+    ciudad: "Barranquilla",
+    direccion: "Calle 79 #42F-93, Local 102. Garden Plaza",
     telefono: "+57 302 754 3225",
     horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+72+%2382-60+Bogota"
+    gmaps: "https://maps.google.com/?q=Calle+79+%2342F-93+Barranquilla"
+  },
+
+  // BOGOTÁ
+  {
+    nombre: "Barrios Unidos",
+    ciudad: "Bogotá",
+    direccion: "Carrera 65 #73-23",
+    telefono: "Por confirmar",
+    horario: "8:00 AM – 5:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+65+%2373-23+Barrios+Unidos+Bogota"
+  },
+  {
+    nombre: "Boka2 — Norte",
+    ciudad: "Bogotá",
+    direccion: "Calle 186 #16B-04, Verbenal",
+    telefono: "Por confirmar",
+    horario: "Consultar disponibilidad",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+186+%2316B-04+Bogota"
+  },
+  {
+    nombre: "Boka2 — Sur",
+    ciudad: "Bogotá",
+    direccion: "Av. Ciudad de Cali #41-51 Sur, Local 2-132",
+    telefono: "Por confirmar",
+    horario: "Consultar disponibilidad",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Av+Ciudad+de+Cali+%2341-51+Sur+Bogota"
+  },
+  {
+    nombre: "Candelaria",
+    ciudad: "Bogotá",
+    direccion: "Carrera 5 #17-69",
+    telefono: "+57 301 482 7680",
+    horario: "8:00 AM – 10:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+5+%2317-69+Candelaria+Bogota"
+  },
+  {
+    nombre: "CC Granada Hills",
+    ciudad: "Bogotá",
+    direccion: "Autopista Norte #146-57",
+    telefono: "+57 300 555 9550",
+    horario: "7:00 AM – 7:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Autopista+Norte+%23146-57+Bogota"
   },
   {
     nombre: "Cedritos — Calidex",
@@ -82,66 +86,6 @@ const ACOPIOS = [
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
     gmaps: "https://maps.google.com/?q=Cra+19+%23147-30+Bogota"
-  },
-  {
-    nombre: "San Victorino — Calidex",
-    ciudad: "Bogotá",
-    direccion: "Calle 12B #9-40. CC Neos, Nivel 0, Local 010",
-    telefono: "+57 302 754 3225",
-    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+12B+%239-40+Bogota"
-  },
-  {
-    nombre: "Chapinero — Hotel Matisse",
-    ciudad: "Bogotá",
-    direccion: "Calle 57 #5-55",
-    telefono: "+57 305 867 9421",
-    horario: "8:00 AM – 8:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+57+%235-55+Chapinero+Bogota"
-  },
-  {
-    nombre: "Chapinero — Centro Parque 63",
-    ciudad: "Bogotá",
-    direccion: "Carrera 13 #63-2",
-    telefono: "+57 322 841 7046",
-    horario: "8:00 AM – 7:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Carrera+13+%2363-2+Bogota"
-  },
-  {
-    nombre: "Chapinero — Carrera 9",
-    ciudad: "Bogotá",
-    direccion: "Carrera 9 #57-70",
-    telefono: "Por confirmar",
-    horario: "9:00 AM – 7:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Carrera+9+%2357-70+Chapinero+Bogota"
-  },
-  {
-    nombre: "Kennedy — Conjunto Oasis de Castilla",
-    ciudad: "Bogotá",
-    direccion: "Calle 19 #40-41",
-    telefono: "+57 313 440 7049",
-    horario: "8:00 AM – 8:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+19+%2340-41+Kennedy+Bogota"
-  },
-  {
-    nombre: "Barrios Unidos",
-    ciudad: "Bogotá",
-    direccion: "Carrera 65 #73-23",
-    telefono: "Por confirmar",
-    horario: "8:00 AM – 5:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Carrera+65+%2373-23+Barrios+Unidos+Bogota"
   },
   {
     nombre: "Cedritos — Panadería Ávila",
@@ -164,14 +108,104 @@ const ACOPIOS = [
     gmaps: "https://maps.google.com/?q=Calle+19A+%2372-57+Bogota"
   },
   {
-    nombre: "CC Granada Hills",
+    nombre: "Chapinero — Carrera 9",
     ciudad: "Bogotá",
-    direccion: "Autopista Norte #146-57",
-    telefono: "+57 300 555 9550",
-    horario: "7:00 AM – 7:00 PM",
+    direccion: "Carrera 9 #57-70",
+    telefono: "Por confirmar",
+    horario: "9:00 AM – 7:00 PM",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
-    gmaps: "https://maps.google.com/?q=Autopista+Norte+%23146-57+Bogota"
+    gmaps: "https://maps.google.com/?q=Carrera+9+%2357-70+Chapinero+Bogota"
+  },
+  {
+    nombre: "Chapinero — Centro Parque 63",
+    ciudad: "Bogotá",
+    direccion: "Carrera 13 #63-2",
+    telefono: "+57 322 841 7046",
+    horario: "8:00 AM – 7:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+13+%2363-2+Bogota"
+  },
+  {
+    nombre: "Chapinero — Hotel Matisse",
+    ciudad: "Bogotá",
+    direccion: "Calle 57 #5-55",
+    telefono: "+57 305 867 9421",
+    horario: "8:00 AM – 8:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+57+%235-55+Chapinero+Bogota"
+  },
+  {
+    nombre: "Engativá — Calidex",
+    ciudad: "Bogotá",
+    direccion: "Calle 72 #82-60, Local 13 (Piso 1). Centro Empresarial Punto 72",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+72+%2382-60+Bogota"
+  },
+  {
+    nombre: "Fontibón — Fundación Mahuampi",
+    ciudad: "Bogotá",
+    direccion: "Carrera 116A #15C-70",
+    telefono: "+57 322 768 3589",
+    horario: "Sábados y Domingos 3:00 PM – 8:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+116A+%2315C-70+Fontibon+Bogota"
+  },
+  {
+    nombre: "Fundación Juntos se Puede",
+    ciudad: "Bogotá",
+    direccion: "Calle 104 #54-31",
+    telefono: "Por confirmar",
+    horario: "9:00 AM – 6:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+104+%2354-31+Bogota"
+  },
+  {
+    nombre: "Kennedy",
+    ciudad: "Bogotá",
+    direccion: "Av. Cra. 86 #44 Sur-10 Local 29",
+    telefono: "+57 350 833 4029",
+    horario: "Consultar disponibilidad",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Av.+Cra.+86+%2344+Sur-10+Bogota"
+  },
+  {
+    nombre: "Kennedy — Conjunto Oasis de Castilla",
+    ciudad: "Bogotá",
+    direccion: "Calle 19 #40-41",
+    telefono: "+57 313 440 7049",
+    horario: "8:00 AM – 8:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+19+%2340-41+Kennedy+Bogota"
+  },
+  {
+    nombre: "San Victorino — Calidex",
+    ciudad: "Bogotá",
+    direccion: "Calle 12B #9-40. CC Neos, Nivel 0, Local 010",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+12B+%239-40+Bogota"
+  },
+  {
+    nombre: "Suba",
+    ciudad: "Bogotá",
+    direccion: "Centro Comercial Centro Suba, Av. Calle 145 #91-19 Local 12-101",
+    telefono: "+57 318 534 2222",
+    horario: "Consultar disponibilidad",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Centro+Comercial+Centro+Suba+Bogota"
   },
   {
     nombre: "Usaquén",
@@ -184,65 +218,56 @@ const ACOPIOS = [
     gmaps: "https://maps.google.com/?q=Carrera+8+%23127-76+Usaquen+Bogota"
   },
   {
-    nombre: "Fontibón — Fundación Mahuampi",
+    nombre: "Wed Envios Venezuela (Cedritos)",
     ciudad: "Bogotá",
-    direccion: "Carrera 1166 #186-70",
-    telefono: "+57 322 768 3589",
-    horario: "Sábados y Domingos 3:00 PM – 8:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Carrera+1166+%23186-70+Fontibo+Bogota"
-  },
-  {
-    nombre: "Candelaria",
-    ciudad: "Bogotá",
-    direccion: "Carrera 5 #17-69",
-    telefono: "+57 301 482 7680",
-    horario: "8:00 AM – 10:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Carrera+5+%2317-69+Candelaria+Bogota"
-  },
-  // MEDELLÍN
-  {
-    nombre: "Poblado",
-    ciudad: "Medellín",
-    direccion: "C.C. Automotriz PH, Cra. 43A #19A-87 Local 102",
-    telefono: "+57 319 713 9149",
+    direccion: "Calle 142 #17A-40 Local 1",
+    telefono: "+57 317 765 2294",
     horario: "Consultar disponibilidad",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    gmaps: "https://maps.google.com/?q=Cra.+43A+%2319A-87+Medellin"
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+142+%2317A-40+Bogota"
   },
   {
-    nombre: "Poblado — Calidex",
-    ciudad: "Medellín",
-    direccion: "Cra 35A #15B-35, Las Palmas – Poblado. Centro de Negocios Prisma, Oficina 101",
-    telefono: "+57 302 754 3225",
-    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    nombre: "Xocolat & More — Sede Bebé",
+    ciudad: "Bogotá",
+    direccion: "Carrera 11D #118A-95, Barrio Santa Bárbara",
+    telefono: "+57 601 702 7610",
+    horario: "Lunes a Domingo 8:00 AM – 8:00 PM",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
-    gmaps: "https://maps.google.com/?q=Cra+35A+%2315B-35+Medellin"
+    gmaps: "https://maps.google.com/?q=Carrera+11D+%23118A-95+Bogota"
   },
   {
-    nombre: "Centro — Calidex",
-    ciudad: "Medellín",
-    direccion: "Carrera 51 #51-47, Estación Parque Berrío. CC Veracruz, Piso 3, Locales 3197–3199",
-    telefono: "+57 302 754 3225",
-    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    nombre: "Xocolat & More — Sede Evolución",
+    ciudad: "Bogotá",
+    direccion: "Calle 138 #55-53, Parque Comercial Colina",
+    telefono: "+57 601 758 6373",
+    horario: "Lunes a Domingo 8:00 AM – 8:00 PM",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
-    gmaps: "https://maps.google.com/?q=Carrera+51+%2351-47+Medellin"
+    gmaps: "https://maps.google.com/?q=Calle+138+%2355-53+Bogota"
   },
   {
-    nombre: "Bello Niquía — Calidex",
-    ciudad: "Medellín",
-    direccion: "Diagonal 55 #37-41. CC Estación Niquía, Local 147",
-    telefono: "+57 302 754 3225",
-    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    nombre: "Xocolat & More — Sede Renacer",
+    ciudad: "Bogotá",
+    direccion: "Calle 114A #18C-60",
+    telefono: "Por confirmar",
+    horario: "Consultar disponibilidad",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
-    gmaps: "https://maps.google.com/?q=Diagonal+55+%2337-41+Bello+Antioquia"
+    gmaps: "https://maps.google.com/?q=Calle+114A+%2318C-60+Bogota"
   },
+  {
+    nombre: "20 de Julio",
+    ciudad: "Bogotá",
+    direccion: "Av. 1 de Mayo #8-22",
+    telefono: "+57 320 438 3449",
+    horario: "Consultar disponibilidad",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Av.+1+de+Mayo+%238-22+Bogota"
+  },
+
   // CALI
   {
     nombre: "Jorge Zawadsky",
@@ -251,6 +276,7 @@ const ACOPIOS = [
     telefono: "+57 323 329 3517",
     horario: "Consultar disponibilidad",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
     gmaps: "https://maps.google.com/?q=Av.+Paso+Ancho+48A-29+Cali"
   },
   {
@@ -273,17 +299,7 @@ const ACOPIOS = [
     disponible: true,
     gmaps: "https://maps.google.com/?q=Cra+56+%233-32+Cali"
   },
-  // BARRANQUILLA
-  {
-    nombre: "Ciudad Jardín — Calidex",
-    ciudad: "Barranquilla",
-    direccion: "Calle 79 #42F-93, Local 102. Garden Plaza",
-    telefono: "+57 302 754 3225",
-    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
-    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
-    disponible: true,
-    gmaps: "https://maps.google.com/?q=Calle+79+%2342F-93+Barranquilla"
-  },
+
   // CÚCUTA
   {
     nombre: "Zona Industrial — Calidex",
@@ -294,9 +310,50 @@ const ACOPIOS = [
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
     gmaps: "https://maps.google.com/?q=Avenida+6+%237N-109+Cucuta"
+  },
+
+  // MEDELLÍN
+  {
+    nombre: "Bello Niquía — Calidex",
+    ciudad: "Medellín",
+    direccion: "Diagonal 55 #37-41. CC Estación Niquía, Local 147",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Diagonal+55+%2337-41+Bello+Antioquia"
+  },
+  {
+    nombre: "Centro — Calidex",
+    ciudad: "Medellín",
+    direccion: "Carrera 51 #51-47, Estación Parque Berrío. CC Veracruz, Piso 3, Locales 3197–3199",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+51+%2351-47+Medellin"
+  },
+  {
+    nombre: "Poblado",
+    ciudad: "Medellín",
+    direccion: "C.C. Automotriz PH, Cra. 43A #19A-87 Local 102",
+    telefono: "+57 319 713 9149",
+    horario: "Consultar disponibilidad",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Cra.+43A+%2319A-87+Medellin"
+  },
+  {
+    nombre: "Poblado — Calidex",
+    ciudad: "Medellín",
+    direccion: "Cra 35A #15B-35, Las Palmas – Poblado. Centro de Negocios Prisma, Oficina 101",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Cra+35A+%2315B-35+Medellin"
   }
 ];
-
 // ---- Render ----
 function renderAcopios() {
   const container = document.getElementById("acopios-list");
