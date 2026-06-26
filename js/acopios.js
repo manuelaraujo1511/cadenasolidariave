@@ -16,7 +16,7 @@
 const ACOPIOS = [
   // BOGOTÁ
   {
-    nombre: "Cedritos (Principal)",
+    nombre: "Wed Envios Venezuela (Cedritos)",
     ciudad: "Bogotá",
     direccion: "Calle 142 #17A-40 Local 1",
     telefono: "+57 317 765 2294",
@@ -34,6 +34,16 @@ const ACOPIOS = [
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     disponible: true,
     gmaps: "https://maps.google.com/?q=Av.+1+de+Mayo+%238-22+Bogota"
+  },
+  {
+    nombre: "Fundación Juntos se puede",
+    ciudad: "Bogotá",
+    direccion: "Calle 104 #54-31",
+    telefono: "Por confirmar",
+    horario: "9:00 AM – 6:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+104+%2354-31+Bogota"
   },
   {
     nombre: "Kennedy",
