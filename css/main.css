@@ -220,14 +220,23 @@ body {
   line-height: 1.5;
 }
 
-/* Animación spinner de carga */
-@keyframes spin {
+/* Spinner Bootstrap-style */
+.spinner-load {
+  color: var(--red);
+  vertical-align: middle;
+  animation: spinner-rotate 0.75s linear infinite;
+}
+
+@keyframes spinner-rotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 .impact-card-num.loading {
-  animation: spin 1.5s linear infinite;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
 }
 
 /* ---- CONTEXT SECTION ---- */

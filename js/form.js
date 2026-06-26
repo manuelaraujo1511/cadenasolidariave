@@ -134,10 +134,11 @@ form.addEventListener("submit", async (e) => {
     const current = parseInt(statEl.textContent) || 0;
     statEl.textContent = current + 1;
 
-    if (data.entrega === "recoger") {
-      const recEl = document.getElementById("stat-recolecciones");
-      const curr2 = parseInt(recEl.textContent) || 0;
-      recEl.textContent = curr2 + 1;
+    // Actualizar stat de repartidores si tiene vehículo
+    if (data.entrega === "vehiculo") {
+      const repEl = document.getElementById("stat-repartidores");
+      const curr2 = parseInt(repEl.textContent) || 0;
+      repEl.textContent = curr2 + 1;
     }
 
     // Links de share dinámicos
@@ -157,21 +158,18 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// Spinner mientras carga
-const spinner = "⏳";
+// Spinner SVG Bootstrap-style
+const spinner = '<svg class="spinner-load" viewBox="0 0 50 50" width="24" height="24"><circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="31.4 94.2"></circle></svg>';
 const statDonantes = document.getElementById("stat-donantes");
-const statRecolecciones = document.getElementById("stat-recolecciones");
-const statAcopios = document.getElementById("stat-acopios");
+const statRepartidores = document.getElementById("stat-repartidores");
 
 // Inicializar stats con spinner
-statDonantes.textContent = spinner;
-statRecolecciones.textContent = spinner;
-statAcopios.textContent = spinner;
+statDonantes.innerHTML = spinner;
+statRepartidores.innerHTML = spinner;
 
 // Agregar clase de loading para animación
 statDonantes.classList.add("loading");
-statRecolecciones.classList.add("loading");
-statAcopios.classList.add("loading");
+statRepartidores.classList.add("loading");
 
 async function actualizarContadores() {
   try {
@@ -180,17 +178,17 @@ async function actualizarContadores() {
 
     // Remover spinner
     statDonantes.classList.remove("loading");
-    statRecolecciones.classList.remove("loading");
+    statRepartidores.classList.remove("loading");
 
     statDonantes.textContent = data.donantes || "0";
-    statRecolecciones.textContent = data.recolecciones || "0";
+    statRepartidores.textContent = data.repartidores || "0";
   } catch (err) {
     console.error("Error actualizando contadores:", err);
     // En caso de error, mostrar 0
     statDonantes.classList.remove("loading");
-    statRecolecciones.classList.remove("loading");
+    statRepartidores.classList.remove("loading");
     statDonantes.textContent = "0";
-    statRecolecciones.textContent = "0";
+    statRepartidores.textContent = "0";
   }
 }
 
