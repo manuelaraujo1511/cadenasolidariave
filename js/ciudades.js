@@ -16,10 +16,18 @@ const CIUDADES = {
   },
   medellin: {
     nombre: "Medellín",
-    localidades: ["Poblado", "Laureles", "Centro", "Envigado"]
+    localidades: ["Poblado", "Laureles", "Centro", "Envigado", "Bello"]
   },
   cali: {
     nombre: "Cali",
-    localidades: ["Jorge Zawadsky", "Centro", "San Fernando"]
+    localidades: ["Jorge Zawadsky", "Centro", "San Fernando", "Norte", "Sur"]
+  },
+  barranquilla: {
+    nombre: "Barranquilla",
+    localidades: ["Ciudad Jardín"]
+  },
+  cucuta: {
+    nombre: "Cúcuta",
+    localidades: ["Zona Industrial"]
   }
 };

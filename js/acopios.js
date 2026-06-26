@@ -53,6 +53,36 @@ const ACOPIOS = [
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     gmaps: "https://maps.google.com/?q=Centro+Comercial+Centro+Suba+Bogota"
   },
+  {
+    nombre: "Engativá — Calidex",
+    ciudad: "Bogotá",
+    direccion: "Calle 72 #82-60, Local 13 (Piso 1). Centro Empresarial Punto 72",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+72+%2382-60+Bogota"
+  },
+  {
+    nombre: "Cedritos — Calidex",
+    ciudad: "Bogotá",
+    direccion: "Cra 19 #147-30, Local 09. CC La Juguetería",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Cra+19+%23147-30+Bogota"
+  },
+  {
+    nombre: "San Victorino — Calidex",
+    ciudad: "Bogotá",
+    direccion: "Calle 12B #9-40. CC Neos, Nivel 0, Local 010",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+12B+%239-40+Bogota"
+  },
   // MEDELLÍN
   {
     nombre: "Poblado",
@@ -63,6 +93,36 @@ const ACOPIOS = [
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     gmaps: "https://maps.google.com/?q=Cra.+43A+%2319A-87+Medellin"
   },
+  {
+    nombre: "Poblado — Calidex",
+    ciudad: "Medellín",
+    direccion: "Cra 35A #15B-35, Las Palmas – Poblado. Centro de Negocios Prisma, Oficina 101",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Cra+35A+%2315B-35+Medellin"
+  },
+  {
+    nombre: "Centro — Calidex",
+    ciudad: "Medellín",
+    direccion: "Carrera 51 #51-47, Estación Parque Berrío. CC Veracruz, Piso 3, Locales 3197–3199",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+51+%2351-47+Medellin"
+  },
+  {
+    nombre: "Bello Niquía — Calidex",
+    ciudad: "Medellín",
+    direccion: "Diagonal 55 #37-41. CC Estación Niquía, Local 147",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Diagonal+55+%2337-41+Bello+Antioquia"
+  },
   // CALI
   {
     nombre: "Jorge Zawadsky",
@@ -72,6 +132,48 @@ const ACOPIOS = [
     horario: "Consultar disponibilidad",
     acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
     gmaps: "https://maps.google.com/?q=Av.+Paso+Ancho+48A-29+Cali"
+  },
+  {
+    nombre: "Norte — Calidex",
+    ciudad: "Cali",
+    direccion: "Carrera 1 #61A-30, Local 10. CC Colón Plaza",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Carrera+1+%2361A-30+Cali"
+  },
+  {
+    nombre: "Sur — Calidex",
+    ciudad: "Cali",
+    direccion: "Cra 56 #3-32, Local 5. Barrio Cuarto de Legua",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Cra+56+%233-32+Cali"
+  },
+  // BARRANQUILLA
+  {
+    nombre: "Ciudad Jardín — Calidex",
+    ciudad: "Barranquilla",
+    direccion: "Calle 79 #42F-93, Local 102. Garden Plaza",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados 9:00 AM – 1:00 PM",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Calle+79+%2342F-93+Barranquilla"
+  },
+  // CÚCUTA
+  {
+    nombre: "Zona Industrial — Calidex",
+    ciudad: "Cúcuta",
+    direccion: "Avenida 6 #7N-109, Zona Industrial. Edificio Red Rubicam S.A.S.",
+    telefono: "+57 302 754 3225",
+    horario: "Lunes a Viernes 8:00 AM – 5:30 PM / Sábados Cerrado",
+    acepta: ["Alimentos", "Ropa", "Medicamentos", "Aseo"],
+    disponible: true,
+    gmaps: "https://maps.google.com/?q=Avenida+6+%237N-109+Cucuta"
   }
 ];
 
